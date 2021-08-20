@@ -93,7 +93,8 @@ class _MyRadialProgress extends CustomPainter {
     final paintArco = new Paint()
       ..strokeWidth = grosorPrimario
       ..color = colorPrimario
-      ..style = PaintingStyle.stroke;
+      ..style = PaintingStyle.stroke
+      ..strokeCap = StrokeCap.round;
 
     //Parte que se debería ir llenando
     double arcAngle = 2 * pi * (porcentaje / 100);
